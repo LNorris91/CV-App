@@ -1,0 +1,20 @@
+* {
+  background-color: lightgrey;
+}
+
+/* .editBtn,
+.newJobBtn {
+  visibility: hidden;
+} */
+
+.experience:hover {
+  .newJobBtn {
+    visibility: visible;
+  }
+}
+
+.outputs:hover {
+  .editBtn {
+    visibility: visible;
+  }
+}
