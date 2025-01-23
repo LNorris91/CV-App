@@ -2,17 +2,29 @@
   background-color: lightgrey;
 }
 
-.editBtn {
+.editBtn,
+.newJobBtn,
+.newSchoolBtn,
+.deleteBtn {
   visibility: hidden;
 }
 
-.experience:hover {
-  .newJobBtn {
+.generalInfo:hover {
+  .editBtn {
     visibility: visible;
   }
 }
 
-.outputs:hover {
+.experience:hover {
+  .newJobBtn,
+  .deleteBtn,
+  .editBtn {
+    visibility: visible;
+  }
+}
+.education:hover {
+  .newSchoolBtn,
+  .deleteBtn,
   .editBtn {
     visibility: visible;
   }

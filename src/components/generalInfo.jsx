@@ -14,7 +14,7 @@ export default function GeneralInfo() {
   }
 
   return (
-    <>
+    <section className="generalInfo">
       <div
         className="inputs"
         style={{
@@ -65,6 +65,6 @@ export default function GeneralInfo() {
           Edit
         </button>
       </div>
-    </>
+    </section>
   );
 }
