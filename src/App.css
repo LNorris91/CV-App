@@ -2,10 +2,9 @@
   background-color: lightgrey;
 }
 
-/* .editBtn,
-.newJobBtn {
+.editBtn {
   visibility: hidden;
-} */
+}
 
 .experience:hover {
   .newJobBtn {

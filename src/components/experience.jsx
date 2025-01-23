@@ -3,7 +3,7 @@ import '../styles/experience.css';
 import Job from './job';
 
 export default function Experience() {
-  const [jobList, setJobList] = useState([]);
+  const [jobList, setJobList] = useState([{ id: crypto.randomUUID() }]);
 
   function handleAdd() {
     setJobList([...jobList, { id: crypto.randomUUID() }]);
@@ -20,14 +20,15 @@ export default function Experience() {
         {jobList.map((job, index) => (
           <li key={job.id}>
             <Job />
-            <button onClick={() => handleDelete(index)}>delete</button>
+            <button className="deleteBtn" onClick={() => handleDelete(index)}>
+              delete
+            </button>
           </li>
         ))}
       </ul>
       <button className="newJobBtn" onClick={handleAdd}>
         Add New Job
       </button>
-      <button onClick={() => console.log(jobList)}>console log jobs</button>
     </section>
   );
 }
