@@ -22,35 +22,38 @@ export default function GeneralInfo() {
         }}
       >
         <h2>General Info:</h2>
-        <label>
-          Name:
-          <input
-            type="text"
-            value={name}
-            id="name"
-            onChange={(event) => setName(event.target.value)}
-          />
-        </label>
-        <label>
-          Email:
-          <input
-            type="email"
-            value={email}
-            id="email"
-            onChange={(event) => setEmail(event.target.value)}
-          />
-        </label>
-        <label>
-          Phone:
-          <input
-            type="tel"
-            value={phoneNumber}
-            id="phoneNumber"
-            onChange={(event) => setPhoneNumber(event.target.value)}
-          />
-        </label>
-
-        <button onClick={handleVisibilities}>Submit</button>
+        <div className="inputContainer">
+          <label>
+            Name:
+            <input
+              type="text"
+              value={name}
+              id="name"
+              onChange={(event) => setName(event.target.value)}
+            />
+          </label>
+          <label>
+            Email:
+            <input
+              type="email"
+              value={email}
+              id="email"
+              onChange={(event) => setEmail(event.target.value)}
+            />
+          </label>
+          <label>
+            Phone:
+            <input
+              type="tel"
+              value={phoneNumber}
+              id="phoneNumber"
+              onChange={(event) => setPhoneNumber(event.target.value)}
+            />
+          </label>
+          <button className="submitBtn" onClick={handleVisibilities}>
+            SUBMIT
+          </button>
+        </div>
       </div>
       <div
         className="outputs"

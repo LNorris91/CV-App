@@ -1,5 +1,21 @@
-* {
-  background-color: lightgrey;
+body {
+  margin: 0px;
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.app h1 {
+  justify-self: center;
+}
+
+.cv {
+  width: 8in;
+  background-color: white;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 15px;
 }
 
 .editBtn,

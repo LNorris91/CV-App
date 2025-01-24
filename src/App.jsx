@@ -6,9 +6,12 @@ import Education from './components/education';
 function App() {
   return (
     <div className="app">
-      <GeneralInfo />
-      <Experience />
-      <Education />
+      <h1>Build Your Resumé</h1>
+      <div className="cv">
+        <GeneralInfo />
+        <Experience />
+        <Education />
+      </div>
     </div>
   );
 }
