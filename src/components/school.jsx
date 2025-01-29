@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../styles/school.css';
 
 export default function School() {
   const [school, setSchool] = useState('');
@@ -20,36 +21,38 @@ export default function School() {
           display: inputDisplay,
         }}
       >
-        <label>
-          School:
-          <input
-            type="text"
-            value={school}
-            id="school"
-            onChange={(event) => setSchool(event.target.value)}
-          />
-        </label>
-        <label>
-          Title of Study:
-          <input
-            type="text"
-            value={study}
-            id="study"
-            onChange={(event) => setStudy(event.target.value)}
-          />
-        </label>
-        <label>
-          Date of Study:
-          <input
-            type="date"
-            value={date}
-            id="date"
-            onChange={(event) => setDate(event.target.value)}
-          />
-        </label>
-        <button className="submitBtn" onClick={handleDisplays}>
-          Submit
-        </button>
+        <div className="inputContainer">
+          <label>
+            School:
+            <input
+              type="text"
+              value={school}
+              id="school"
+              onChange={(event) => setSchool(event.target.value)}
+            />
+          </label>
+          <label>
+            Title of Study:
+            <input
+              type="text"
+              value={study}
+              id="study"
+              onChange={(event) => setStudy(event.target.value)}
+            />
+          </label>
+          <label>
+            Date of Study:
+            <input
+              type="date"
+              value={date}
+              id="date"
+              onChange={(event) => setDate(event.target.value)}
+            />
+          </label>
+          <button className="submitBtn" onClick={handleDisplays}>
+            Submit
+          </button>
+        </div>
       </section>
       <section
         className="outputs"
