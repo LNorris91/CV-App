@@ -15,7 +15,7 @@ export default function Education() {
 
   return (
     <section className="education">
-      <h2>Education:</h2>
+      <h2 id="educationHeader">Education</h2>
       <ul>
         {schoolList.map((school, index) => (
           <li key={school.id}>

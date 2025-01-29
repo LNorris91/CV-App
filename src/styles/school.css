@@ -15,3 +15,18 @@
 .education input {
   width: 250px;
 }
+
+#schoolName {
+  font-weight: 300;
+}
+
+.outputs h3,
+#gradDate {
+  font-family: var(--headerFont);
+  font-weight: 100;
+  margin: 0px 0px 5px;
+}
+
+#gradDate {
+  margin-top: 5px;
+}

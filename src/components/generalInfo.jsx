@@ -21,38 +21,28 @@ export default function GeneralInfo() {
           display: inputVisibility,
         }}
       >
-        <h2>General Info:</h2>
+        <h2 id="generalInfoHeader">General Info</h2>
         <div className="inputContainer">
           <label>
             Name:
-            <input
-              type="text"
-              value={name}
-              id="name"
-              onChange={(event) => setName(event.target.value)}
-            />
+            <input type="text" value={name} onChange={(event) => setName(event.target.value)} />
           </label>
           <label>
             Email:
-            <input
-              type="email"
-              value={email}
-              id="email"
-              onChange={(event) => setEmail(event.target.value)}
-            />
+            <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} />
           </label>
           <label>
             Phone:
             <input
               type="tel"
               value={phoneNumber}
-              id="phoneNumber"
               onChange={(event) => setPhoneNumber(event.target.value)}
             />
           </label>
           <button className="submitBtn" onClick={handleVisibilities}>
             SUBMIT
           </button>
+          <div className="line" id="generalInfoLine"></div>
         </div>
       </div>
       <div
@@ -61,9 +51,12 @@ export default function GeneralInfo() {
           display: outputVisibility,
         }}
       >
-        <h1>{name}</h1>
-        <h3>{email}</h3>
-        <h3>{phoneNumber}</h3>
+        <div className="outputContainer">
+          <h1 id="name">{name.toUpperCase()}</h1>
+          <p id="email">{email}</p>
+          <p id="phone">{phoneNumber}</p>
+          <div className="line"></div>
+        </div>
         <button className="editBtn" onClick={handleVisibilities}>
           Edit
         </button>

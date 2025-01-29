@@ -60,9 +60,9 @@ export default function School() {
           display: outputDisplay,
         }}
       >
-        <h2>{school}</h2>
+        <h3 id="schoolName">{school.toUpperCase()}</h3>
+        <p id="gradDate">{date}</p>
         <h3>{study}</h3>
-        <p>{date}</p>
         <button className="editBtn" onClick={handleDisplays}>
           Edit
         </button>

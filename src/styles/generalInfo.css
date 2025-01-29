@@ -5,6 +5,11 @@
   align-items: center;
 }
 
+#generalInfoHeader {
+  font-family: var(--headerFont);
+  font-weight: 400;
+}
+
 .generalInfo label {
   display: flex;
   flex-direction: column;
@@ -12,4 +17,29 @@
 
 .generalInfo input {
   width: 250px;
+}
+
+.generalInfo .outputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name {
+  font-family: var(--headerFont);
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+#email,
+#phone {
+  font-family: var(--contentFont);
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin: 2px;
+}
+
+#generalInfoLine {
+  transform: none;
 }

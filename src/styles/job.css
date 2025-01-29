@@ -27,3 +27,21 @@ textarea {
 input[type='checkbox'] {
   width: 30px;
 }
+
+.outputs h2 {
+  font-family: var(--headerFont);
+  font-weight: 600;
+  margin: 0px;
+}
+
+.outputs h3,
+#duration {
+  font-family: var(--headerFont);
+  font-weight: 100;
+  margin: 0px 0px 5px;
+}
+
+.outputs p {
+  margin-top: 0;
+  margin-bottom: 0;
+}

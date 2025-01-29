@@ -8,6 +8,11 @@
   position: relative;
 }
 
+#educationHeader {
+  font-family: var(--headerFont);
+  font-weight: 400;
+}
+
 .deleteBtn {
   background-color: rgb(56, 56, 56);
   color: white;

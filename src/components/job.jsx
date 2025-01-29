@@ -91,17 +91,12 @@ export default function Job() {
           display: outputDisplay,
         }}
       >
-        <h1>{company}</h1>
-        <h4>{title}</h4>
-        <p>{role}</p>
-        <p>from: {startDate}</p>
-        <p
-          style={{
-            display: isChecked ? 'none' : 'block',
-          }}
-        >
-          to: {endDate}
+        <h2>{title}</h2>
+        <h3>{company.toUpperCase()}</h3>
+        <p id="duration">
+          {startDate} to {isChecked ? 'Present' : endDate}
         </p>
+        <p>{role}</p>
         <button className="editBtn" onClick={handleDisplays}>
           Edit
         </button>

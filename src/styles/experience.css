@@ -4,6 +4,11 @@
   justify-content: center;
 }
 
+#experienceHeader {
+  font-family: var(--headerFont);
+  font-weight: 400;
+}
+
 .experience li {
   position: relative;
 }

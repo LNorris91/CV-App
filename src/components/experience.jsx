@@ -15,7 +15,7 @@ export default function Experience() {
 
   return (
     <section className="experience">
-      <h2>Experience:</h2>
+      <h2 id="experienceHeader">Experience</h2>
       <ul>
         {jobList.map((job, index) => (
           <li key={job.id}>
@@ -26,6 +26,7 @@ export default function Experience() {
           </li>
         ))}
       </ul>
+      <div className="line"></div>
       <button className="newJobBtn" onClick={handleAdd}>
         Add New Job
       </button>
