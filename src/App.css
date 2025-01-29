@@ -6,6 +6,12 @@ body {
   padding: 40px;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .app h1 {
   justify-self: center;
 }
@@ -23,6 +29,16 @@ body {
 .newSchoolBtn,
 .deleteBtn {
   visibility: hidden;
+}
+
+.submitBtn {
+  width: 100px;
+  height: 35px;
+  margin: 10px 0px;
+  color: white;
+  background-color: rgb(73, 161, 174);
+  border: none;
+  border-radius: 5px;
 }
 
 .generalInfo:hover {
@@ -44,4 +60,8 @@ body {
   .editBtn {
     visibility: visible;
   }
+}
+
+button:hover {
+  cursor: pointer;
 }

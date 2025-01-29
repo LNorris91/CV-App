@@ -47,7 +47,9 @@ export default function School() {
             onChange={(event) => setDate(event.target.value)}
           />
         </label>
-        <button onClick={handleDisplays}>Submit</button>
+        <button className="submitBtn" onClick={handleDisplays}>
+          Submit
+        </button>
       </section>
       <section
         className="outputs"

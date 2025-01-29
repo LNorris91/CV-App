@@ -1,0 +1,29 @@
+.experience .inputContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.experience label {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience input {
+  width: 250px;
+}
+
+textarea {
+  resize: none;
+}
+
+#checkboxLabel {
+  flex-direction: row;
+}
+
+input[type='checkbox'] {
+  width: 30px;
+}
